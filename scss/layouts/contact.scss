@@ -1,0 +1,22 @@
+.contact{
+    
+    .contact__content{
+        position: fixed;
+    height: 300px;
+    top: 0;
+    left: 0;
+        .col-cus1{
+            position: relative;
+            .contact__item1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-color: rgba(255,255,255,0.5);
+              
+                
+            }
+        }
+    }
+}

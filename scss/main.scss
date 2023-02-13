@@ -1,0 +1,43 @@
+// helpers
+@import './helpers/variables';
+@import './helpers/mixin';
+@import './helpers/extend';
+
+// vendors
+
+// base
+@import './base/reset';
+@import './base/customize';
+
+// layouts
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/intro';
+@import './layouts/courses';
+@import './layouts/viewing';
+@import './layouts/banner';
+@import './layouts/categories';
+@import './layouts/student';
+@import './layouts/partners';
+@import './layouts/jobs';
+@import './layouts/sidebar';
+@import './layouts/contact.scss';
+
+// components
+@import './components/button';
+@import './components/cover';
+@import './components/card';
+
+// pages
+@import './pages/home';
+
+// theme
+@import './theme/dark/resetDark';
+@import './theme/dark/sidebarMiniDark';
+@import './theme/dark/headerDark';
+@import './theme/dark/coursesDark';
+@import './theme/dark/categoriesDark';
+@import './theme/dark/studentDark';
+@import './theme/dark/partnersDark';
+@import './theme/dark/jobsDark';
+@import './theme/dark/footerDark';

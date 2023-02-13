@@ -1,0 +1,87 @@
+footer{
+    @include styleText($color-gray-0, $fs-1, $fw-0);
+    .footer__top{
+        width: 90%;
+        margin: $mg-3 auto;
+        .nav{
+            height: 110px;
+            .nav-item{
+                flex-basis: 25%;
+                &.bold{
+                    font-weight: $fw-3;
+                }
+                .nav-link{
+                    padding: 0;
+                    color: $color-blue-0;
+                }
+            }
+        }
+        .btn-group{
+            button{
+                border: 1px solid $color-gray-0;
+                width: 160px;
+                @include styleText($color-gray-0, $fs-1, $fw-1);
+                background-color: $color-white-0;
+                i{
+                    padding: 0 $pd-2;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+                &:hover{
+                    color: $color-black-0;
+                }
+            }
+            .dropdown-toggle{
+                &::after{
+                    margin-left: 30%;
+                }
+            }
+            .dropdown-menu{
+                .dropdown-item{
+                    font-size: $fs-1;
+                }
+            }
+        }
+        .col-md-3{
+            text-align: right;
+        }
+    }
+    .footer__bottom{
+        width: 90%;
+        margin: $mg-1 + 5 auto;
+        img{
+            width: 110px;
+            margin-right:  $mg-0 + 5;
+            
+        }
+        .img-black{
+            display: inline-block;
+        }
+        .img-white{
+            display: none;
+        }
+        .nav{
+            justify-content: flex-end;
+            .nav-item{
+                .nav-link{
+                    color: $color-blue-0;
+                }
+            }
+        }
+    }
+    @include responsive("medium"){
+        .footer__top{
+            .col-md-3{
+                text-align: left;
+            }
+        }
+    }
+    @include responsive("medium"){
+        .footer__bottom{
+            .nav{
+                justify-content: flex-start;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.darkMode{
+    .jobs{
+        background-color: $color-dark-6;
+        .jobs__content{
+            // .jobs__border{
+            //     border-right: 1px solid $color-gray-2;
+            // }
+            padding-bottom: $pd-1;
+            .jobs-cus{
+                text-align: center;
+                .jobs__item{
+                    max-width: 450px;
+                    margin: 0 auto;
+                    padding: $pd-3;
+                    h2{
+                        @include styleText($color-dark-5, $fs-3 + 1, $fw-1)
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}

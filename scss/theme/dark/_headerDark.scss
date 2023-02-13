@@ -1,0 +1,77 @@
+.darkMode {
+    .myNavbar {
+        background-color: $color-dark-4;
+        .myNavbar__left {
+            .navbar-brand {
+                .logo-white {
+                    display: inline-block;
+                }
+                .logo-black {
+                    display: none;
+                }
+            }
+        }
+        .myNavbar__categories {
+            i {
+                color: $color-dark-5;
+            }
+            span {
+                color: $color-dark-3;
+            }
+        }
+        .myNavbar__form {
+            @include styleFormSearchDark($color-dark-0, $color-dark-5);
+        }
+        .myNavbar__right {
+            .navbar-nav {
+                .nav-item-cus {
+                    &:hover {
+                        background-color: $color-dark-0;
+                        border: 1px solid $color-dark-1;
+                    }
+                    .nav-link {
+                        color: $color-dark-5;
+                    }
+                    .overlay {
+                        background-color: $color-dark-4;
+                        border: 1px solid $color-dark-1;
+                        &::before {
+                            content: "";
+                            width: 15px;
+                            height: 15px;
+                            display: block;
+                            border: 1px solid $color-dark-1;
+                            position: absolute;
+                            top: -8px;
+                            right: 10%;
+                            transform: rotate(47deg);
+                            background-color: $color-dark-4;
+                            border-bottom: 1px solid rgba(20, 23, 28, 0.05);
+                            border-right: 1px solid rgba(20, 23, 28, 0.05);
+                        }
+                    }
+                }
+                .myNavbar-cart {
+                    text-align: center;
+                    line-height: 25px;
+                }
+                .myNavbar-buttons {
+                    .button__white {
+                        &:hover {
+                            color: $color-dark-5;
+                            background-color: $color-dark-0;
+                            border: 1px solid $color-dark-1;
+                        }
+                    }
+                    .button__red {
+                        &:hover {
+                            color: $color-white-0;
+                            background-color: $color-red-2;
+                            border: 1px solid $color-red-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

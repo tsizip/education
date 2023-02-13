@@ -1,0 +1,66 @@
+.owl-carousel{
+    .owl-nav{
+        button{
+            &:focus{
+                outline: none;
+            }
+            &.owl-prev, &.owl-next{
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background-color: $color-white-0;
+                box-shadow: 0px 2px 8px 2px $color-black-1;
+                color: $color-blue-0;
+                position: absolute;
+                top: 30%;
+                font-size: $fs-5;
+                &:hover{
+                    background-color: $color-white-0;
+                    color: $color-blue-0;
+                    text-decoration: none;
+                }
+            }
+            &.owl-prev{
+                left: -30px;
+            }
+            &.owl-next{
+                right: -30px;
+            }
+        }
+    }
+    .card{
+        .card-body{
+            .card-title{
+                @include styleText($color-black-0, $fs-0, $fw-1);
+            }
+            .card-text{
+                @include styleText($color-gray-0, $fs-1 - 1, $fw-0);
+                margin: $mg-0 0;
+            }
+            .card__stars{
+                i{
+                    @include styleText($color-yellow-0, $fs-1 - 1, $fw-3);
+                }
+                .card__rate{
+                    @include styleText($color-gray-0, $fs-1, $fw-1);
+                }
+                .card__total{
+                    @include styleText($color-gray-0, $fs-7, $fw-0);
+                }
+            }
+            .card__price{
+                text-align: right;
+                span{
+                    &:first-child{
+                        @include styleText($color-gray-0, $fs-1, $fw-0);
+                        text-decoration: line-through;
+                    }
+                    &:last-child{
+                        @include styleText($color-black-0,$fs-0, $fw-1);
+                    }
+                }
+            }
+        }
+
+    }
+}

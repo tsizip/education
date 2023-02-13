@@ -1,0 +1,35 @@
+.student{
+    width: 90%;
+    margin: 0 auto;
+    padding: $pd-4 0;
+    .student__content{
+        h2{
+            font-size: $fs-5;
+            margin-bottom: $mg-2;
+        }
+        .card{
+            padding: 2rem;
+        }
+        .card__top{
+            display: flex;
+            margin-bottom: $mg-2 - 5;
+            img{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                
+            }
+            .card__img{
+                padding-right: $pd-1;
+            }
+            .card__contop{
+                .card__star{
+                    i{
+                        @include styleText($color-yellow-0, $fs-1 - 1, $fw-3 )
+                    }
+                }
+            }
+        }
+
+    }
+}

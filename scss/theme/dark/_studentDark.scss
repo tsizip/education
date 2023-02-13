@@ -1,0 +1,16 @@
+.darkMode{
+    .student-cus{
+        background-color: $color-dark-6;
+        .student__content{
+            .card{
+                background-color: $color-dark-4;
+                .card__top{
+                    span{
+                        color: $color-dark-5;
+                    }
+                }
+            }
+        }
+    }
+    
+}
